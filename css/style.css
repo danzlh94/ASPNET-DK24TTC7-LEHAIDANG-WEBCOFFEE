@@ -66,3 +66,21 @@ body {
   padding: 20px;
   border: 1px solid #aaa;
 }
+.price {
+  color: #7b2c1f;
+  font-weight: bold;
+}
+
+.card button {
+  background: #7b2c1f;
+  color: white;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.card button:hover {
+  background: #a53b2a;
+}
+``
