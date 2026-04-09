@@ -299,3 +299,7 @@ footer {
   margin-top: 70px;
 }
 ``
+body {
+  position: relative;
+}
+``
