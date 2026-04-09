@@ -5,14 +5,14 @@
   box-sizing: border-box;
 }
 
-/* FONT + BODY */
+/* BODY */
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f7f3ef;
   color: #2c2c2c;
 }
 
-/* ===== HEADER (Giống Highlands) ===== */
+/* ===== HEADER ===== */
 .header {
   position: sticky;
   top: 0;
@@ -28,7 +28,6 @@ body {
   font-size: 22px;
   font-weight: bold;
   color: #f5d7a3;
-  letter-spacing: 1px;
 }
 
 .header nav a {
@@ -36,182 +35,17 @@ body {
   text-decoration: none;
   margin-left: 22px;
   font-weight: bold;
-  font-size: 14px;
 }
 
 .header nav a:hover {
   color: #f5d7a3;
 }
 
-/* ===== HERO BANNER ===== */
-.hero {
-  width: 100%;
-  height: 80vh;
-  background:
-    linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-    url("https://images.unsplash.com/photo-1509042239860-f550ce710b93");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero-content {
-  text-align: center;
-  color: white;
-}
-
-.hero-content h1 {
-  font-size: 48px;
-  letter-spacing: 3px;
-  margin-bottom: 15px;
-}
-
-.hero-content p {
-  font-size: 18px;
-  margin-bottom: 25px;
-}
-
-/* ===== BUTTON CHUNG ===== */
-.btn,
-.hero-content a {
-  background: #c79a5b;
-  color: white;
-  text-decoration: none;
-  padding: 12px 26px;
-  font-weight: bold;
-  border-radius: 2px;
-}
-
-.btn:hover,
-.hero-content a:hover {
-  background: #a97c43;
-}
-
-/* ===== TITLE ===== */
-.title {
-  text-align: center;
-  font-size: 34px;
-  font-weight: bold;
-  color: #7b2c1f;
-  margin: 50px 0 30px;
-}
-
-/* ===== PRODUCT GRID ===== */
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-  gap: 25px;
-  padding: 0 40px 60px;
-}
-
-/* ===== CARD SẢN PHẨM ===== */
-.card {
-  background: white;
-  border-radius: 4px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-  overflow: hidden;
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-}
-
-.card img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-}
-
-.card h3 {
-  padding: 12px;
-  font-size: 18px;
-}
-
-.price {
-  color: #7b2c1f;
-  font-weight: bold;
-  padding: 0 12px;
-}
-
-/* ===== BUTTON MUA ===== */
-.card button {
-  width: calc(100% - 24px);
-  margin: 12px;
-  padding: 10px;
-  background: #7b2c1f;
-  color: white;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.card button:hover {
-  background: #a53b2a;
-}
-
-/* ===== LOGIN BOX ===== */
-.login-box {
-  width: 320px;
-  margin: 120px auto;
-  padding: 30px;
-  background: white;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-}
-
-.login-box h2 {
-  text-align: center;
-  color: #7b2c1f;
-  margin-bottom: 20px;
-}
-
-.login-box input {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 12px;
-}
-
-.login-box button {
-  width: 100%;
-  padding: 10px;
-  background: #7b2c1f;
-  color: white;
-  border: none;
-  font-weight: bold;
-  margin-top: 10px;
-}
-
-/* ===== FOOTER ===== */
-footer {
-  background: #7b2c1f;
-  color: white;
-  text-align: center;
-  padding: 18px;
-  font-size: 14px;
-}
-
-/* ===== MOBILE ===== */
-@media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 34px;
-  }
-
-  .header {
-    flex-direction: column;
-  }
-
-  .header nav {
-    margin-top: 10px;
-  }
-}
-``
-/* ===== SLIDER HIGHLANDS STYLE ===== */
+/* ===== SLIDER ===== */
 .slider {
   position: relative;
   height: 80vh;
+  margin-top: 70px;
   overflow: hidden;
 }
 
@@ -235,14 +69,14 @@ footer {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.45);
+  background: rgba(0, 0, 0, 0.45);
 }
 
 .slide-content {
   position: relative;
-  color: white;
-  text-align: center;
   z-index: 2;
+  text-align: center;
+  color: white;
 }
 
 .slide-content h1 {
@@ -255,6 +89,20 @@ footer {
   font-size: 18px;
   margin-bottom: 25px;
 }
+
+/* BUTTON */
+.btn {
+  background: #c79a5b;
+  color: white;
+  text-decoration: none;
+  padding: 12px 26px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #a97c43;
+}
+
 /* ===== FOOTER ===== */
 .footer {
   background: #7b2c1f;
@@ -293,13 +141,18 @@ footer {
   padding: 12px;
   font-size: 13px;
 }
-``
-/* FIX HEADER ĐÈ SLIDER */
-.slider {
-  margin-top: 70px;
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .slide-content h1 {
+    font-size: 34px;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .header nav {
+    margin-top: 10px;
+  }
 }
-``
-body {
-  position: relative;
-}
-``
