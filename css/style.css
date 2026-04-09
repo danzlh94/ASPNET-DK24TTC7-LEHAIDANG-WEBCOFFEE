@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+.header {
+  background: #7b2c1f;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.header a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.hero {
+  height: 80vh;
+  background: url("https://images.unsplash.com/photo-1509042239860-f550ce710b93") center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  color: white;
+  background: rgba(0,0,0,0.5);
+  padding: 30px;
+  text-align: center;
+}
+
+.btn {
+  background: #c79a5b;
+  padding: 10px 20px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 250px);
+  gap: 20px;
+  padding: 30px;
+  justify-content: center;
+}
+
+.card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.login-box {
+  width: 300px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 1px solid #aaa;
+}
