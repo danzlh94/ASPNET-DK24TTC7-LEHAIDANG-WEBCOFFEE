@@ -1,16 +1,19 @@
-const products = [
+const coffee = [
   {
     id: 1,
     name: "Phin Sữa Đá",
     price: 35000,
-    img: "https://static.wixstatic.com/media/bdc8a3_9c7c8a0454194bcb803d4d7a64b0807f~mv2.jpg/v1/fill/w_480,h_480,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/bdc8a3_9c7c8a0454194bcb803d4d7a64b0807f~mv2.jpg"
+    img: "https://images.unsplash.com/photo-1509042239860-f550ce710b93"
   },
   {
     id: 2,
     name: "Bạc Xỉu",
     price: 39000,
     img: "https://visty.vn/wp-content/uploads/2021/07/7-mon-ca-phe-tu-pha-tai-nha-bac-xiu-ca-phe-1216x800.jpg"
-  },
+  }
+];
+
+const tea = [
   {
     id: 3,
     name: "Trà Sen Vàng",
@@ -22,26 +25,24 @@ const products = [
     name: "Trà Đào Cam Sả",
     price: 48000,
     img: "https://cdn.tgdd.vn/2020/07/CookRecipe/GalleryStep/thanh-pham-273.jpg"
-  },
-  {
-    id: 5,
-    name: "Cold Brew",
-    price: 55000,
-    img: "https://kingcoffee.com.vn/wp-content/uploads/2025/12/Ca-phe-cold-brew-la-gi-1024x683.jpg"
   }
 ];
 
-const productList = document.getElementById("productList");
-
-if (productList) {
-  products.forEach(p => {
-    productList.innerHTML += `
-      <div class="card">
-        <img src="${p.img}" alt="${p.name}">
-        <h3>${p.name}</h3>
-        <p class="price">${p.price.toLocaleString()} đ</p>
-        <button onclick="addToCart(${p.id})">Thêm vào giỏ</button>
+function render(list, data) {
+  if (!list) return;
+  data.forEach(p => {
+    list.innerHTML += `
+      <div class="menu-item">
+        <img src="${p.img}">
+        <div class="menu-info">
+          <h4>${p.name}</h4>
+          <span>${p.price.toLocaleString()} đ</span>
+        </div>
+        <button onclick="addToCart(${p.id})">+</button>
       </div>
     `;
   });
 }
+
+render(document.getElementById("coffeeList"), coffee);
+render(document.getElementById("teaList"), tea);
