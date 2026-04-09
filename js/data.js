@@ -19,7 +19,7 @@ const products = [
   },
   {
     id: 4,
-    name: "https://cdn.tgdd.vn/2020/07/CookRecipe/GalleryStep/thanh-pham-273.jpg",
+    name: "https://cdn.tgdd.vn/2020/07/CookRecipe/GalleryStep/thanh-pham-273.jpg"
     price: 48000,
     img: "images/tra_dao.jpg"
   },
