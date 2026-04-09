@@ -1,16 +1,45 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-<meta charset="UTF-8">
-<title>Giỏ hàng</title>
-<link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-<h2 class="title">GIỎ HÀNG</h2>
-<div id="cartItems"></div>
-<button onclick="checkout()">Thanh toán</button>
-
-<script src="js/cart.js"></script>
-</body>
-</html>
+ (cd "$(git rev-parse --show-toplevel)" && git apply --3way <<'EOF' 
+diff --git a/cart.html b/cart.html
+index a2d39ef585ebe55393f199d08ab7222c93eeabe1..ef11284810191a00792bbf0362b583ed266e83fe 100644
+--- a/cart.html
++++ b/cart.html
+@@ -1,16 +1,29 @@
+ <!DOCTYPE html>
+ <html lang="vi">
+ <head>
+ <meta charset="UTF-8">
+ <title>Giỏ hàng</title>
+ <link rel="stylesheet" href="css/style.css">
+ </head>
+-<body>
+-
+-<h2 class="title">GIỎ HÀNG</h2>
+-<div id="cartItems"></div>
+-<button onclick="checkout()">Thanh toán</button>
++<body>
++
++<header class="header">
++  <div class="logo">
++    <img src="images/logo.png" alt="SHIN Coffee & Tea">
++    <span>SHIN Coffee & Tea</span>
++  </div>
++  <nav>
++    <a href="index.html">Trang chủ</a>
++    <a href="menu.html">Menu</a>
++    <a href="cart.html">Giỏ hàng</a>
++    <a href="login.html">Đăng nhập</a>
++  </nav>
++</header>
++
++<h2 class="title">GIỎ HÀNG</h2>
++<div id="cartItems"></div>
++<button onclick="checkout()">Thanh toán</button>
+ 
+ <script src="js/cart.js"></script>
+ </body>
+-</html>
+\ No newline at end of file
++</html>
+ 
+EOF
+)
