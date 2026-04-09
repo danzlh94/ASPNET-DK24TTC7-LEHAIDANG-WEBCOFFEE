@@ -19,7 +19,7 @@ const products = [
   },
   {
     id: 4,
-    name: "Trà Đào Cam Sả",
+    name: "https://cdn.tgdd.vn/2020/07/CookRecipe/GalleryStep/thanh-pham-273.jpg",
     price: 48000,
     img: "images/tra_dao.jpg"
   },
@@ -27,7 +27,7 @@ const products = [
     id: 5,
     name: "Cold Brew",
     price: 55000,
-    img: "images/cold_brew.jpg"
+    img: "https://kingcoffee.com.vn/wp-content/uploads/2025/12/Ca-phe-cold-brew-la-gi-1024x683.jpg"
   }
 ];
 
