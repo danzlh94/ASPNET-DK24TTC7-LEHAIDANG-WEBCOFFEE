@@ -208,3 +208,51 @@ footer {
   }
 }
 ``
+/* ===== SLIDER HIGHLANDS STYLE ===== */
+.slider {
+  position: relative;
+  height: 80vh;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+}
+
+.slide-content {
+  position: relative;
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+.slide-content h1 {
+  font-size: 48px;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.slide-content p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
