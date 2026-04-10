@@ -1,57 +1,59 @@
-# ☕ SHIN Coffee & Tea Website
+# ☕ SHIN Coffee & Tea – ASP.NET Website
 
-Website giới thiệu quán **SHIN Coffee & Tea**, được xây dựng nhằm phục vụ mục đích đồ án học phần Web / Frontend.
+Website **SHIN Coffee & Tea** được xây dựng bằng **ASP.NET**, phục vụ cho đồ án môn học lập trình Web.
 
 ---
 
 ## 📌 Giới thiệu
-SHIN Coffee & Tea là website mô phỏng một quán cà phê – trà với phong cách hiện đại kết hợp truyền thống.  
-Website tập trung vào trải nghiệm người dùng, cảm xúc thương hiệu và giao diện thân thiện.
+SHIN Coffee & Tea là website giới thiệu quán cà phê và trà với giao diện hiện đại, kết hợp phong cách truyền thống.
+Website hỗ trợ xem menu, giỏ hàng và trình bày câu chuyện thương hiệu.
 
 ---
 
 ## 🎯 Mục tiêu đồ án
-- Xây dựng website bằng HTML, CSS, JavaScript thuần
-- Thiết kế giao diện giống website chuỗi cà phê chuyên nghiệp
-- Áp dụng LocalStorage để mô phỏng giỏ hàng
-- Triển khai website trên GitHub Pages
+- Áp dụng công nghệ **ASP.NET** trong xây dựng website
+- Thiết kế giao diện thân thiện, hiện đại
+- Thực hiện các chức năng cơ bản của website bán hàng
+- Rèn luyện kỹ năng lập trình Web thực tế
 
 ---
 
 ## ⚙️ Công nghệ sử dụng
-- **HTML5**: Cấu trúc website
-- **CSS3**: Thiết kế giao diện, hiệu ứng
-- **JavaScript**: Slider, giỏ hàng, LocalStorage
-- **GitHub Pages**: Triển khai website
+- **ASP.NET (ASP.NET Core / ASP.NET MVC / Web Forms)**  
+- **C#**
+- **HTML5, CSS3**
+- **JavaScript**
+- **LocalStorage (mô phỏng giỏ hàng)**
+- **Visual Studio**
 
 ---
 
 ## 🧩 Chức năng chính
-- Trang chủ có slider tự động
-- Hiển thị câu chuyện thương hiệu
-- Menu Coffee & Tea gọn gàng
-- Giỏ hàng thêm/xóa sản phẩm
-- Lưu dữ liệu giỏ hàng bằng LocalStorage
-- Giao diện responsive (desktop & mobile)
+- Trang chủ có slider banner tự động
+- Trang giới thiệu – câu chuyện thương hiệu
+- Trang menu Coffee & Tea
+- Giỏ hàng (thêm/xóa sản phẩm)
+- Giao diện responsive
 
 ---
 
-## 📁 Cấu trúc thư mục
+## 📁 Cấu trúc project (tham khảo)
+
 ```text
-ASPNET-DK24TTC7-LEHAIDANG-WEBCOFFEE/
+SHIN_Coffee_Tea/
 │
-├── index.html
-├── menu.html
-├── cart.html
-├── login.html
+├── Controllers/
+├── Models/
+├── Views/
+│   ├── Home/
+│   ├── Menu/
+│   └── Cart/
 │
-├── css/
-│   └── style.css
+├── wwwroot/
+│   ├── css/
+│   ├── js/
+│   └── images/
 │
-├── js/
-│   ├── data.js
-│   ├── cart.js
-│   └── slider.js
-│
-└── images/
-    └── logo.png
+├── Program.cs
+└── appsettings.json
+``
