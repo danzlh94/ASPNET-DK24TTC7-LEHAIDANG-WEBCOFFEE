@@ -276,3 +276,97 @@ body {
   align-items: center;
 }
 ``
+/* ===== STORY SECTION (FIX GỌN + ĐẸP) ===== */
+.story {
+  background: #fffaf4;
+  padding: 90px 20px;
+}
+
+.story-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* TITLE */
+.story-title {
+  font-size: 14px;
+  letter-spacing: 4px;
+  color: #7b2c1f;
+  margin-bottom: 12px;
+}
+
+.story-subtitle {
+  font-size: 30px;
+  margin-bottom: 40px;
+  color: #2c2c2c;
+}
+
+/* IMAGE */
+.story-media {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.story-media img {
+  width: 260px;              /* ✅ FIX ẢNH NHỎ LẠI */
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+/* TEXT */
+.story-text {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #444;
+}
+
+.story-text p {
+  margin-bottom: 18px;
+}
+
+/* QUOTE */
+.story-quote {
+  margin-top: 25px;
+  font-style: italic;
+  color: #7b2c1f;
+  font-weight: bold;
+}
+
+/* ===== HIỆU ỨNG FADE-IN ===== */
+.fade-in {
+  animation: fadeUp 1.2s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .story-media {
+    flex-direction: column;
+  }
+
+  .story-media img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .story-subtitle {
+    font-size: 24px;
+  }
+}
