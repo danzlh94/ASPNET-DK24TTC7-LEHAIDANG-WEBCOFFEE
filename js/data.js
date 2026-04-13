@@ -47,11 +47,13 @@ function render(id, list) {
   const el = document.getElementById(id);
   if (!el) return;
 
+  el.innerHTML = ""; // reset tránh render chồng
+
   list.forEach(p => {
     el.innerHTML += `
       <div class="menu-item">
-        ${p.img}
-        <div>
+        <img src="${p.img}" alt="${p.name}">
+        <div class="menu-info">
           <h4>${p.name}</h4>
           <span>${p.price.toLocaleString()} đ</span>
         </div>
@@ -60,6 +62,7 @@ function render(id, list) {
     `;
   });
 }
+``
 
 render("coffeeList", coffee);
 render("teaList", tea);
